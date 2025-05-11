@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_pchakri123_go_pipeline_sample_1746971327142-push-trigger-input-set
+  identifier: Build_pchakri123_go_pipeline_sample_1746971327142pushtriggerinputset
+  orgIdentifier: WiproPOC
+  projectIdentifier: Chakri_P
+  pipeline:
+    identifier: Build_pchakri123_go_pipeline_sample_1746971327142
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
