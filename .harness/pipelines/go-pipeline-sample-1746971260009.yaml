@@ -31,7 +31,7 @@ pipeline:
                   name: docker_build
                   spec:
                     connectorRef: <+input>
-                    repo: https://hub.docker.com/repositories/chakravarthi2085/sample_application
+                    repo: chakravarthi2085/sample_application
                     tags:
                       - latest
                     caching: true
