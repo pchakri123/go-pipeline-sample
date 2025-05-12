@@ -57,9 +57,9 @@ pipeline:
                   timeout: ""
                   type: BuildAndPushDockerRegistry
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
+            type: Cloud
             spec: {}
-            type: Docker
         type: CI
