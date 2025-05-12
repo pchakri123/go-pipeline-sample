@@ -27,16 +27,14 @@ pipeline:
                   timeout: ""
                   type: Run
               - step:
-                  identifier: dockerbuild
-                  name: docker_build
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
                   spec:
-                    connectorRef: <+input>.allowedValues(Docker_connect)
+                    connectorRef: Docker_connect
                     repo: sample_application
                     tags:
                       - latest
-                    caching: true
-                  timeout: ""
-                  type: BuildAndPushDockerRegistry
           platform:
             os: Linux
             arch: Amd64
