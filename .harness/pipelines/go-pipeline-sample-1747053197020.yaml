@@ -30,7 +30,7 @@ pipeline:
                   identifier: dockerbuild
                   name: docker_build
                   spec:
-                    connectorRef: <+input>
+                    connectorRef: <+input>.allowedValues(Go_connector)
                     repo: sample_application
                     tags:
                       - latest
