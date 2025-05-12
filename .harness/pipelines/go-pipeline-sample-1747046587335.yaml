@@ -32,7 +32,7 @@ pipeline:
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
                     connectorRef: Docker_connect
-                    repo: sample_application
+                    repo: https://hub.docker.com/repository/docker/chakravarthi2085/sample_application
                     tags:
                       - latest
           platform:
